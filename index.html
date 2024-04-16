@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nanum+Gothic&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
     <div class="homepage">
     <div class="nav">
@@ -32,7 +32,7 @@
             <h1 id="motto">"Plantation made simple"</h1>
             <h1 id="sub-text-motto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt velit aspernatur, quos quas expedita dolorum assumenda reprehenderit </h1>
             <div id="getstarted-div">
-            <h1 id="started">Get Started</h1>
+            <a href="#get-started-page"><h1 id="started">Get Started</h1></a>
             <h1 id="learnmore">Learn More</h1>
         <!-- </div>
             <h1 id="count">69420 Plants Planted.</h1>
@@ -41,10 +41,61 @@
     
     </div>
     
-    <div class="scroll-down"></div>
-
-    
+    <div class="scroll-down"></div> 
+</div>
 </div>
     
+<div id="get-started-page" class="get-started-page">
+<div>
+    <h1 id="get-started-text" >> Get Started</h1>
+    <h1 class="get-started-subtext">Please select the following</h1>
+
+    <div class="slider-sub-div">
+    <h1 class="slider-text">Total Expenses for Plant:</h1>
+    <p class="slider-output" id="rangeValue">$ 100</p>
+</div>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange"  oninput="rangeValue.innerText = this.value">
+       
+      </div>
+
+      <div class="slider-sub-div">
+    <h1 class="slider-text">Total Time for Plant Per Day:</h1>
+    <p class="slider-output" id="rangeValue1">100 Minutes </p>
+</div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange"  oninput="rangeValue1.innerText = this.value">
+        
+      </div>
+
+      <div class="slider-sub-div">
+        <h1 class="slider-text">Availability of Water For Plant:</h1>
+        <p class="slider-output" id="rangeValue2">100 ml </p>
+    </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange"  oninput="rangeValue2.innerText = this.value">
+            
+          </div>
+
+          <div class="slider-sub-div">
+            <label > <h1 class="slider-text" for="plants">Select Type of Plant: </h1>
+            </label>
+
+            <select id="plants">
+              <option value="1">Summer Plants</option>
+              <option value="2">Winter Plants</option>
+              <option value="3">Autum Plants</option>
+              <option value="4">Evergreen Plants</option>
+            </select>
+
+           
+              </div>
+              <a href="#"><h1 id="find-button">Find The Perfect Plant for you</h1></a>
+
+      
+</div>
+<img id="app-photo" src="./images/app.png" alt="">
+</div>
+
 </body>
 </html>
