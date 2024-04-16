@@ -229,13 +229,14 @@ align-items: center;
 	display: flex;
 	margin-top: 80px;
 	justify-content: space-between;
+	width: 100%;
 	
 
   }
 
   #app-photo{
 	height: 95vh;
-	margin-right: 100px;
+	padding-right: 15vw;
 	padding-top: 40px;
 
   }
@@ -314,6 +315,8 @@ align-items: center;
   #plants{
 	margin-left: 10px;
 	font-family: "Heebo", sans-serif;;
+	padding: 10px;
+	font-size: 15px;
 	
   }
 
