@@ -334,3 +334,74 @@ align-items: center;
 	background-color:#044a42 ;
 	margin-left: 13vw;
   }
+
+  #main-portal{
+	overflow: hidden;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	justify-content: space-between;
+  }
+
+  .side-bar{
+	background-color: #1c1b1b;
+	width: 20vw;
+	height: 100vh;
+	flex-wrap: nowrap;
+	display: flex;
+	flex-direction: column;
+	
+  }
+
+  .logo-portal{
+	width: 80px;
+	height: 80px;
+	background-color: #1c1b1b ;
+	padding: 30px 40px;
+  }
+
+  .sidebar-text{
+	background-color: #1c1b1b;
+	font-family: "Rubik", sans-serif;
+	padding: 10px 40px;
+	color: white;
+	font-weight: 300;
+  }
+
+  .portal-main-text{
+	color:#062925;
+	align-self: center;
+	font-family: "Rubik", sans-serif;
+	font-size: 60px;
+	margin-top: 50px;
+	
+	padding-bottom: 30px;
+}
+
+.portal-image{
+	height: 430px;
+	width: 470px;
+	padding-left: 80px;
+}
+
+.portal-sub{
+	display: flex;
+	flex-direction: row;
+justify-content: space-between;
+	height: 80vh;
+}
+
+.portal-sub-text{
+	font-family: "Crimson Text", serif;
+	
+	color: white;
+	font-weight: 100;
+	font-size: 35px;
+	
+	margin-left: 20px;
+}
+
+.portal{
+	width: 75vw;
+}
+
