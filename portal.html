@@ -7,35 +7,165 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="shortcut icon" type="image/x-icon" href="./images/plant-icon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<script src="js/Chart.min.js"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="./images/plant-icon-white.png" />
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'Water Level');
+      data.addColumn('number', 'Days Old');
+      data.addColumn('number', 'Sunlights level');
+
+      data.addRows([
+        [1,  37.8, 80.8, 41.8],
+        [2,  30.9, 69.5, 32.4],
+        [3,  25.4,   57, 25.7],
+        [4,  11.7, 18.8, 10.5],
+        [5,  11.9, 17.6, 10.4],
+        [6,   8.8, 13.6,  7.7],
+        [7,   7.6, 12.3,  9.6],
+        [8,  12.3, 29.2, 10.6],
+        [9,  16.9, 42.9, 14.8],
+        [10, 12.8, 30.9, 11.6],
+        [11,  5.3,  7.9,  4.7],
+        [12,  6.6,  8.4,  5.2],
+        [13,  4.8,  6.3,  3.6],
+        [14,  4.2,  6.2,  3.4]
+      ]);
+
+      var options = {
+        backgroundColor: '#9ea593',
+        chart: {
+        //   title: 'Box Office Earnings in First Two Weeks of Opening',
+        //   subtitle: 'in millions of dollars (USD)'
+        },
+        chartArea: { backgroundColor: '#9ea593' },
+        width: 800,
+        height: 400,
+       
+        color: '#000000',
+        chartArea: {
+      backgroundColor: {
+        fill: '#bdc6af',
+        fillOpacity: 0.8
+      },
+    },
+    backgroundColor: {
+      fill: '#9ea593',
+      fillOpacity: 0.8
+    },
+        axes: {
+          x: {
+            0: {side: 'top'}
+          },
+          textStyle:{color: '#000000'}
+        }
+       
+      };
+
+      
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+
+
+
 </head>
 <body>
     <div id="main-portal">
         <div class="side-bar">
+            <div class="sidebar-innerdiv" id="sidebar-logo-holder">
             <img class="logo-portal" src="./images/plant-icon-white.png" alt="">
-            <a href="index.html"><h1 class="sidebar-text">Home</h1></a>
-            <h1 class="sidebar-text">Home</h1>
-            <h1 class="sidebar-text">Home</h1>
-            <h1 class="sidebar-text">Home</h1>
-            <h1 class="sidebar-text">Home</h1>
-            <h1 class="sidebar-text">Home</h1>
-            <h1 class="sidebar-text">Home</h1>
+           <a href="index.html"><h1 class="sidebar-logo-text">Biruwa.</h1></div></a>
+        
+           <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/82d18627-4eaa-4248-6cd7-602980752c00/preview" alt="" srcset="">
+               <h1 class="sidebar-text">Home</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/fb9cd2a6-b9af-4114-e821-b72b5f61ad00/preview" alt="" srcset="">
+               <h1 class="sidebar-text">Plant Match</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/4815d602-92a4-4d3d-516c-cf8e29e45600/public" alt="" srcset="">
+               <h1 class="sidebar-text">Water Alarm</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/3c86f06c-0d18-4f50-ba2a-fe36c8799900/public" alt="" srcset="">
+               <h1 class="sidebar-text">Nutri Wiki</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/3044ca8c-8a26-429e-6400-38f936726500/preview" alt="" srcset="">
+               <h1 class="sidebar-text">Shop</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/187e65b8-850a-4dfd-3eae-6b8812931000/preview" alt="" srcset="">
+               <h1 class="sidebar-text">Photo-Ai</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/e1913e9f-7529-4bee-fc92-adc443321e00/preview" alt="" srcset="">
+               <h1 class="sidebar-text">Grow-Tracker</h1></div>
+            </a>
+
+            <a href="index.html" class="background-link"> <div class="sidebar-innerdiv">
+                <img class="sidebar-logo" height="50px" width="50px" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/6fe46812-9351-4457-af74-fc83f9b6aa00/preview" alt="" srcset="">
+               <h1 class="sidebar-text">Settings</h1></div>
+            </a>
             
         </div>
 
+
+
         <div class="portal">
            
-            <h1 class="portal-main-text">> Welcome Fiscus Lyrate!</h1>
+            <h1 class="portal-main-text">> Welcome, Fiscus Lyrate!</h1>
             <div class="portal-sub">
                 <div>
-            <h1 class="portal-sub-text">›Your plant is 69 Days Old.</h1>
+            <h1 class="portal-sub-text">›Your plant is <span style="color: black;  ">69</span>  Days Old.</h1>
             <h1 class="portal-sub-text">›Last watered:2 Hours Ago</h1>
             <h1 class="portal-sub-text">›Uv Index:3.2</h1>
+           <div id="container">
+            <div id="line_top_x"></div>
         </div>
-            <img class="portal-image" src="./images/Plant - 960x962.png" alt="" srcset="">
+            </div>
+     
 
+       
         </div>
+
+        
     </div>
+    <div class="image-sub-div">
+        <img class="portal-image" src="./images/Plant - 960x962.png" alt="" srcset="">
+        <div class="portal-text-holder">
+        <h1 class="portal-image-text" id="plant-name">Plant Name</h1>
+        <h1 class="portal-image-text">Scientific Name</h1>
+        <h1 class="portal-image-text"> Family:Lorem</h1>
+        <h1 class="portal-image-text">Species:Lorem</h1>
+        <h1 class="portal-image-text">Kingdom:Lorem</h1>
+        <h1 class="portal-image-text">Genus:Lorem</h1>
+        <h1 class="portal-image-text">Sub Genus:Lorem</h1>
+    </div>
+    </div>
+    </div>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
 }
 
 .fourth-color { 
-	background: #b8e1dd; 
+	background: #9ea593; 
 }
 
 *{
@@ -341,6 +341,7 @@ align-items: center;
 	height: 100vh;
 	width: 100vw;
 	justify-content: space-between;
+	flex-wrap: nowrap;
   }
 
   .side-bar{
@@ -357,15 +358,53 @@ align-items: center;
 	width: 80px;
 	height: 80px;
 	background-color: #1c1b1b ;
-	padding: 30px 40px;
+	padding: 30px 10px;
   }
 
   .sidebar-text{
 	background-color: #1c1b1b;
 	font-family: "Rubik", sans-serif;
-	padding: 10px 40px;
+	padding: 5px 10px;
 	color: white;
 	font-weight: 300;
+	font-size: 28px;
+	
+  }
+
+  .background-link{
+	background-color: #1c1b1b;
+  }
+
+  #sidebar-logo-holder{
+	padding-top: 20px;
+	
+  }
+
+  .sidebar-innerdiv{
+	display: flex;
+	background-color: #1c1b1b;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 15px;
+	padding-left: 40px;
+  }
+
+  .sidebar-logo{
+	background-color: #1c1b1b;
+	height: 40px;
+	width: 40px;
+	
+  }
+
+  .sidebar-logo-text{
+	background-color: #1c1b1b;
+	color: white;
+	font-family: "Rubik", sans-serif;
+	padding: 50px 0px;
+	font-family: "Rubik", sans-serif;
+	font-size: 38px;
+	
+
   }
 
   .portal-main-text{
@@ -379,9 +418,13 @@ align-items: center;
 }
 
 .portal-image{
-	height: 430px;
-	width: 470px;
-	padding-left: 80px;
+	height: 290px;
+	width: 300px;
+	padding-left: 0px;
+	background-color: #818877;
+	border: 1px solid white;
+	margin: 10px;
+	
 }
 
 .portal-sub{
@@ -394,14 +437,74 @@ justify-content: space-between;
 .portal-sub-text{
 	font-family: "Crimson Text", serif;
 	
-	color: white;
+	color: #062925;
 	font-weight: 100;
-	font-size: 35px;
+	font-size: 25px;
 	
 	margin-left: 20px;
+	
 }
 
 .portal{
-	width: 75vw;
+	
 }
 
+#container{
+	height: 400px;
+	width: 800px;
+	
+	margin-left: 30px;
+	padding: 5px;
+	border: solid 1px black;
+	margin-top: 20px;
+}
+
+
+/* 
+#line_top_x{
+	color: #bdc6af;
+	
+} */
+
+
+.image-sub-div{
+	display: flex;
+
+	flex-direction: column;
+	
+	height: 100vh;
+	background-color: #062925;
+	
+}
+
+.portal-text-holder{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+	
+	padding: 40px;
+	background-color:  #062925;
+
+	
+	
+	
+}
+
+.portal-image-text{
+	font-size: 22px;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 200;
+	background-color:  #062925;
+	color: white;
+	padding: 8px 5px;
+	
+
+}
+
+#plant-name{
+	background-color: #6e7662;
+	padding-left: 20px;
+	font-weight: 400;
+}
