@@ -585,7 +585,7 @@ justify-content: space-between;
 	margin-top: 5vh;
 	margin-left: 17vw;
 	/* border: 1px solid rgb(0, 0, 0); */
-	background-color: #989e8f;
+	background-color: #9ea593;
 	border-radius: 10px;
 }
 
@@ -600,7 +600,7 @@ justify-content: space-between;
 
 .gap-div{
 	padding-bottom: 10px;
-	background-color: #989e8f;
+	background-color: #9ea593;
 }
 
 
@@ -646,13 +646,13 @@ input[type="password"]::placeholder {
 	text-align: center;
 	color: #062925;
 	padding-top: 15px;
-	background-color: #989e8f;
+	background-color: #9ea593;
 
 
 
 }
 #back-temp{
-	background-color: #989e8f;
+	background-color: #9ea593;
 }
 
 .line{
