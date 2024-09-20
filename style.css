@@ -52,9 +52,9 @@
 .login-text{
 	color: rgb(15, 33, 31);
 	font-family: "Nanum Gothic", sans-serif;
-	font-weight: 100;
-	font-size: 23px;
-	margin-left: 20px;
+	font-weight: 700;
+	font-size: 28px;
+	margin-left: 40px;
 }
 .home-content{
 	
@@ -65,11 +65,17 @@
 	
 }
 .home-texts{
-	padding-left: 15vw;
-	padding-top: 12vh;
+	width: 55vw;
+	padding:  12vh 2vw 0 15vw; 
 	
 	
 }
+.app-photo{
+
+	height: 88.5vh;
+	width: 65vh;
+
+  }
 
 #sub-text-motto{
 	color: #044a42;
@@ -88,10 +94,10 @@
 	height: 80px;
 }
 
-.home-photo{
+#home-photo{
 	
-	height: 82vh;
-	padding-left: 40px;
+	height: 86vh;
+	padding: 5px 40px 0 10px;
 	
 }
 #motto{
@@ -120,17 +126,26 @@ align-items: center;
 
 
 }
+.stores{
+	display: flex;
+	justify-content: flex-start;
+	height: 40px;
+
+}
+.store1{
+	margin: 0 15px 0 20px;
+}
 	
 
 #started{
 	color: white;
 	margin-top: 30px;
-	border: solid 1px #044a42;
-	padding: 3px 12px;
+	border: solid 2.5px #044a42;
+	padding: 13px;
 	border-radius: 20px;
 	font-family: "Nanum Gothic", sans-serif;
-	font-weight: 100;
-	font-size: 21px;
+	font-weight: 150;
+	font-size: 22px;
 	width: 125px;
 	margin-left: 10px;
 	background-color:#044a42 ;
@@ -154,13 +169,13 @@ align-items: center;
 #learnmore{
 	color: #044a42;
 	margin-top: 30px;
-	border: solid 1px #044a42;
-	padding: 3px 12px;
+	border: solid 2.5px #044a42;
+	padding: 13px;
 	border-radius: 21px;
 	font-family: "Nanum Gothic", sans-serif;
-	font-weight: 50;
-	font-size: 18px;
-	width: 100px;
+	font-weight: 600;
+	font-size: 22px;
+	width: 125px;
 	margin-left: 10px;
 	
 }
@@ -234,12 +249,7 @@ align-items: center;
 
   }
 
-  #app-photo{
-	height: 95vh;
-	padding-right: 15vw;
-	padding-top: 40px;
 
-  }
 
   #get-started-text{
 	padding-top:  90px;
@@ -324,12 +334,12 @@ align-items: center;
 	color: white;
 	margin-top: 50px;
 	border: solid 1px #000000;
-	padding: 7px 12px;
+	padding: 14px;
 	border-radius: 20px;
 	font-family: "Nanum Gothic", sans-serif;
-	font-weight: 100;
-	font-size: 19px;
-	width: 280px;
+	font-weight: 150;
+	font-size: 20px;
+	width: 282px;
 	margin-left: 10px;
 	background-color:#044a42 ;
 	margin-left: 13vw;
@@ -674,4 +684,34 @@ input[type="password"]::placeholder {
 	padding-bottom: 15px;
 	margin-top: 20px;
 	border-radius: 5px;
+}
+
+
+
+
+.boxes{
+  height: 75vh;
+  /* background-color:#6e7662; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+}
+.boxes .box{
+	margin: 0 20px;
+	padding: 40px;
+    border: 5px solid #1c1b1b;
+	border-radius: 15px;
+	width: 30vw;
+	height: 50vh;
+	background-color:#a6a8a2;
+
+}
+
+
+footer{
+	height: 20vh;
+	background-color: #044a42;
 }
